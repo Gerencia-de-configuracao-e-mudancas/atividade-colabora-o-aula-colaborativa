@@ -7,46 +7,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Template Site</h1>
-    </header>
+    <header class="header">
+    <div class="logo">ACOLHE IF</div>
 
     <nav>
-      <a href="#">Início</a>
-      <a href="#">Sobre</a>
-      <a href="#">Contato</a>
+        <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="pagina_de_servicos.html">Serviços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="cadastro.html" class="btn-register">Registrar-se</a></li>
+        </ul>
     </nav>
+</header>
 
-    <main>
-      <section id="inicio">
-        <h2>Bem-vindo!</h2>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Acolhendo Hoje,<br> Cuidando do Amanhã</h1>
         <p>
-          Este é um template básico de site com HTML, CSS e JavaScript
-          organizados em arquivos separados.
+            O Acolhe IF é um espaço de escuta, cuidado e orientação,
+            promovendo saúde mental e bem-estar para estudantes.
         </p>
-      </section>
-
-      <section id="sobre">
-        <h2>Sobre</h2>
-        <p>
-          Esta estrutura serve como base para desenvolvimento de sites. Edite os
-          arquivos <code>index.html</code>, <code>style.css</code> e
-          <code>script.js</code> para personalizar o projeto.
-        </p>
-      </section>
-
-      <section id="interativo">
-        <h2>Interativo</h2>
-        <p>Clique no botão abaixo para testar o JavaScript:</p>
-        <button id="btn-mensagem">Clique aqui</button>
-        <p id="mensagem"></p>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2026 Template Site</p>
-    </footer>
-
-    <script src="script.js"></script>
+        <a href="login.html" class="btn-login">Login</a>
+    </div>
+</section>
   </body>
 </html>
