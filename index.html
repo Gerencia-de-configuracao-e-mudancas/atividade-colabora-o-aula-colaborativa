@@ -1,52 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template Site</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Template Site</h1>
-    </header>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro - ACOLHE IF</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.cadastro.css">
+</head>
+<body class="page-cadastro">
 
-    <nav>
-      <a href="#">Início</a>
-      <a href="#">Sobre</a>
-      <a href="#">Contato</a>
-    </nav>
+<header class="top">
+  <div class="logo">ACOLHE <span>IF</span></div>
+  
+</header>
 
-    <main>
-      <section id="inicio">
-        <h2>Bem-vindo!</h2>
-        <p>
-          Este é um template básico de site com HTML, CSS e JavaScript
-          organizados em arquivos separados.
-        </p>
-      </section>
+<main class="container">
+  <h1>Cadastro</h1>
 
-      <section id="sobre">
-        <h2>Sobre</h2>
-        <p>
-          Esta estrutura serve como base para desenvolvimento de sites. Edite os
-          arquivos <code>index.html</code>, <code>style.css</code> e
-          <code>script.js</code> para personalizar o projeto.
-        </p>
-      </section>
+  <form class="form-grid">
 
-      <section id="interativo">
-        <h2>Interativo</h2>
-        <p>Clique no botão abaixo para testar o JavaScript:</p>
-        <button id="btn-mensagem">Clique aqui</button>
-        <p id="mensagem"></p>
-      </section>
-    </main>
+    <div class="field col-2">
+      <label>Nome completo</label>
+      <input type="text">
+    </div>
 
-    <footer>
-      <p>&copy; 2026 Template Site</p>
-    </footer>
+    <div class="field">
+      <label>Idade</label>
+      <input type="number">
+    </div>
 
-    <script src="script.js"></script>
-  </body>
+    <div class="field">
+      <label>Cor/Raça</label>
+      <input type="text">
+    </div>
+
+    <div class="field">
+      <label>Gênero</label>
+      <select>
+        <option></option>
+        <option>Feminino</option>
+        <option>Masculino</option>
+        <option>Outro</option>
+      </select>
+    </div>
+
+    <div class="field col-2">
+      <label>Matrícula</label>
+      <input type="text">
+    </div>
+
+    <div class="field">
+      <label>Senha</label>
+      <input type="password">
+    </div>
+
+    <div class="field password">
+      <label>Confirmar senha</label>
+      <input type="password">
+    </div>
+    <a href="login.html" class="btn-main col-full">Registrar-me</a>
+
+  </form>
+</main>
+
+</body>
 </html>
